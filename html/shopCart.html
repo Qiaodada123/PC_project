@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>购物车页面</title>
+		
+		<link rel="stylesheet" type="text/css" href="../js/lib/bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/css/jquery.idcode.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/less/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/less/reginter.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/less/login.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/less/shopCart.css"/>
+		
+		<!--[if lt IE 9]>
+	    <script src="../lib/html5shiv/html5shiv.min.js" ></script>
+	    <script src="../lib/respond/respond.min.js" ></script>
+	    <![endif]-->
+	    
+	    <script src="../js/lib/jquery/jquery.js" ></script>
+	    <script src="../js/lib/bootstrap/js/bootstrap.js"></script>
+	    <script src="../js/jquery.idcode.js" ></script>
+		<script src="../js/index.js" ></script>
+		<script src="../js/login.js"></script>
+		<script src="../js/shopCart.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header">
+			<!--1start-->
+			<div class="header-top-box">
+				<div class="wraper clear">
+					<div class="login">
+						<a class="a1">
+							<p>您好,请</p>
+							<em></em>
+						</a>
+						<!--11-->
+						<dd class="ddd">
+							<div class="user_login">
+								<a href="javascript:void(0)" class="fl"><p>15700112057</p></a>
+								<a href="login.html" class="out">[退出登录]</a>
+							</div>
+							<em><a href="javascript:void(0)">级别<br><span class="user_lh">注册会员</span></a></em>
+							<em><a href="javascript:void(0)">积分<br><span>0分</span><br><font>(0.0元)</font></a></em>
+							<em class="b0"><a href="javascript:void(0)">优惠券<br><span class="user_lh">5张</span></a></em>
+						</dd>
+						<!--11-->
+						<a href="login.html" >[登录]</a>
+						<a href="register.html" >[注册]</a>
+						<a href="javascript:void(0)">[机构会员]</a>
+					</div>
+					<div class="city">
+						<a>送至:
+							<font>茂名</font>
+						</a>
+					</div>
+					<div class="head15_menu">
+						<ul>
+							<li><s></s><div class="menu_word"><a >我的订单</a></div></li>
+							<li><div class="menu_word"><a >本来礼品</a></div></li>
+							<li><div class="head15_twocode"><dl><dt><a >掌上本</a><div class="head15_bg"></div></dt><dd ><img src="//image.benlailife.com/webStatic/images/top/App_QR_Code_3de39ad3.png" width="100" height="100" alt=""><p>扫描下载客户端</p></dd></dl></div></li>
+							<li><div class="head15_service"><dl><dt><a >客户服务</a><div class="head15_bg"></div></dt><dd class="d2"><p><a  class="zhiCustomBtn" data-type="easemob">在线客服</a></p><p><a  target="_blank">联系客服</a></p><p><a  target="_blank">销售热线</a></p><p><a  target="_blank">帮助中心</a></p></dd></dl></div></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="topimg wraper">
+			    <a href="index.html"><img src="../images/topcar.jpg" style="margin: 0 auto;"/></a>
+			</div>
+		</div>
+		<!--end头部-->
+		
+		
+		<!--start中间部分-->
+		
+		<div class="cart_tit_n  wraper clear">
+    		<div class="cart_word">我的购物车</div>
+        	<div class="cart_login">现在<a ><img src="../images/cart_btn01.gif" class="jp"></a>，购物车中商品将被永久保存</div>
+		</div>
+		
+		<div id="min_all" class="wraper clear">
+			<div class="cart_n">
+				<ul class="cart_n ccar">            
+					<input type="checkbox" name="proselectall" boxtype="a" checked="checked">            
+					<span style="margin-right:110px;">全选</span>            
+					<span style="margin-right: 285px;">商品</span><span style="margin-right: 100px;">单价</span>
+					<span style="margin-right: 50px;">购买数量</span><span style="margin-right: 90px;">小计</span>
+					<span style="margin-right: 45px;">库存状态</span>操作       
+				</ul>
+				<ul class="shop_car">
+					<!--<li>
+						<div class="check"><input type="checkbox"  checked="checked"></div>
+						<div class="pic"><a href="list.html" ><img src="../images/list1.jpg"></a></div>
+						<div class="name"><a href="list.html" >新西兰 优露欧兰天然矿泉水 10L </a></div>
+						<div class="price">23.00</div>
+						<div class="c_quantity">
+							<p><a  href="javascript:void(0)"><img src="../images/dey_03.gif" width="15" height="15"></a></p>
+							<p class="mt0"><input   type="text" class="textgt_n" value="1" maxlength="3"></p>
+							<p><a href="javascript:void(0)"><img src="../images/dey_04.gif" width="15" height="15"></a></p>                                                       
+						</div>
+						<div class="subtotal">23.00</div>
+						<div class="distribution">有货</div>
+						<div class="operating"><a href="javascript:void(0)">收藏</a><br><a class="mt5"  href="javascript:void(0)">删除</a></div>
+					</li>-->
+					<!--2-->
+					
+					<!--2-->
+					
+				</ul>
+			</div>
+			
+			
+			<div class="cart_none wraper" >
+				<img src="../images/cart_none.png">
+				<p>您还没有购买过商品，<a href="index.html">去逛逛吧</a></p>
+			</div>
+			
+			<div class="hzcart" id="CartTotalamt">
+				<!--<div class="del_all">            
+					<div class="check">                
+						<input type="checkbox" name="proselectall" boxtype="a" checked="checked">            
+					</div>            
+					<a href="javascript:void(0)"  id="selectall" class="select">全选</a>
+					<a href="javascript:void(0)"  class="delete"><img src="../images/dele.gif" width="13" height="15"></a>       
+				</div>
+				<div class="details">
+					<span>商品金额：<font>23.00</font>元</span>                    
+				</div>
+				<div class="all_price">已选择 1 件商品，金额 = <span>23.00</span></div>
+				<div class="butn">            
+					<input type="button" class="fr butn19" data-type="Pay" title="去结算"><a class="continue" href="javascript:history.back(-1);window.location.href='index.html'">继续购物</a>        
+				</div>-->
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--end中间部分-->
+		
+		<!--start底部-->
+			<div class="topimg wraper">
+				    <img src="../images/shop.jpg" style="margin: 0 auto;"/>
+				</div>
+			<div class="bar ">
+			<div class="wraper ">
+				<dl>
+                    <dt class="ico01"></dt>
+                    <dd><span>18小时低温</span>全程冷链配送</dd>
+                 </dl>
+                 <dl>
+                    <dt class="ico02"></dt>
+                    <dd><span>0时差基地直供</span>农田到餐桌</dd>
+                </dl>
+                <dl>
+                        <dt class="ico03"></dt>
+                        <dd><span>43项检测</span>安全无农残</dd>
+                </dl>
+                <dl>
+                    <dt class="ico04"></dt>
+                    <dd><span>7*24小时营业</span>全年无休</dd>
+                </dl>
+                <dl>
+                    <dt class="ico05"></dt>
+                  	<dd><span id="SpanFreeSecShipPrice">满168免运费</span>今日下单次日送达</dd>
+                </dl>
+			</div>
+		</div>
+		<div class="footert wraper clear">
+            <dl>
+                  <dt class="xs">新手指南</dt>
+                  <dd><a href="javascript:void(0)">购物流程</a></dd>
+                  <dd><a href="javascript:void(0)">会员政策</a></dd>
+                  <dd><a href="javascript:void(0)">联系客服</a></dd>
+                  <dd><a href="javascript:void(0)">积分政策</a></dd>
+                  <dd><a href="javascript:void(0)">加入我们</a></dd>
+            </dl>
+            <dl>
+                  <dt class="ps">配送方式</dt>
+                  <dd><a href="javascript:void(0)">全程冷链</a></dd>
+                  <dd><a href="javascript:void(0)">配送时间</a></dd>
+                  <dd><a href="javascript:void(0)">配送范围</a></dd>
+                  <dd><a href="javascript:void(0)">配送收费标准</a></dd>
+                  <dd><a href="javascript:void(0)">关于我们</a></dd>
+            </dl>
+            <dl>
+                  <dt class="zf">支付方式</dt>
+				  <dd><a href="javascript:void(0)">在线支付</a></dd>
+                  <dd><a href="javascript:void(0)">其他支付方式</a></dd>
+                  <dd><a href="javascript:void(0)">优惠券使用</a></dd>
+                  <dd><a href="javascript:void(0)">礼金卡使用</a></dd>
+            </dl>
+            <dl>
+                  <dt class="sh">售后服务</dt>
+                  <dd><a href="javascript:void(0)">验货与拒收政策</a></dd>
+                  <dd><a href="javascript:void(0)">退换货政策</a></dd>
+                  <dd><a href="javascript:void(0)">退换货流程</a></dd>
+                  <dd><a href="javascript:void(0)">退款流程</a></dd>
+                  <dd><a href="javascript:void(0)">发票制度</a></dd>
+            </dl>    
+     </div>
+     <div class="info wraper">
+           <dl>
+                 <dt><img src="../images/tel_f3c65362.gif" >客服热线：4006-917-917（周一至周日 8:00-20:00）</dt>
+                 <dd>
+                       <em><a href="javascript:void(0)">加入我们</a></em>
+                       <em><a href="javascript:void(0)">联系我们</a></em>
+                       <em><a href="javascript:void(0)">关于我们</a></em>
+                       <em><a href="javascript:void(0)">友情链接</a></em>
+                       <em><a href="javascript:void(0)">品牌食材</a></em>
+                       <em><a href="javascript:void(0)">食品流通许可证</a></em>
+                       <em class="b0"><a href="javascript:void(0)">营业执照</a></em>
+                 </dd>
+                 <dd class="d2">
+                       <img src="../images/beian_d0289dc0.png">京公网安备 11010502022386号
+                       <em class="b0"><a href="javascript:void(0)">京ICP证120338号</a></em>
+                       
+                 </dd>
+                 <dd class="copy">© 2012-2017 Benlai.com. All Rights Reserved. 北京本来工坊科技有限公司</dd>
+                 <dd class="d3"><img src="../images/verifyseal.jpg"></dd>
+           </dl>
+     </div>
+	<!--end底部-->
+	<!--start右侧浮动-->	
+	<div id="goTop">
+	    <a href="javascript:void(0)" hidefocus="true" id="go_top" ></a>
+	    <a href="javascript:void(0)" id="right_cart" class="cart_buy cart_focus" ></a>
+	    <a href="javascript:void(0)" class="zhiCustomBtn service" ></a>
+	    <a href="javascript:void(0)" id="two_code"   class="two_code" ></a>
+    </div>
+    <!---------------->
+    <div  id="twocodeParent">
+	    <div class="pop_code">
+	        <div class="code_con">
+	            <span>
+	                <img src="../images/w1.png" width="186" height="186" alt="本来微博 二维码"></span>
+	            <b>本来微博 二维码</b>
+	        </div>
+	    </div>
+	    <div class="pop_code2">
+	        <div class="code_con">
+	            <span>
+	                <img src="../images/w2.gif" width="186" height="186" alt="本来微信 二维码"></span>
+	            <b>本来微信 二维码</b>
+	        </div>
+	    </div>
+	
+	    <div class="pop_code3">
+	        <div class="code_con">
+	            <span>
+	                <img src="../images/w3.gif" width="186" height="186" alt="扫描下载客户端"></span>
+	            <b>扫描下载客户端</b>
+	        </div>
+	    </div>
+	</div>
+<!--------------------->
+	<!--end右侧浮动-->
+	
+	
+	</body>
+</html>

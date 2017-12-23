@@ -1,0 +1,769 @@
+img {
+  font-size: 12px;
+  vertical-align: middle;
+}
+em,
+i {
+  font-style: normal;
+}
+.content {
+  height: 3000px;
+}
+.path15 {
+  width: 1200px;
+  float: left;
+  color: #959595;
+  line-height: 40px;
+}
+#_ProductDetails .good15_box {
+  width: 596px;
+  float: left;
+}
+#_ProductDetails .good15_box .good15_pic {
+  width: 596px;
+  float: left;
+}
+#_ProductDetails .good15_box .good15_pic dl {
+  width: 84px;
+  float: left;
+}
+#_ProductDetails .good15_box .good15_pic dl a.up {
+  width: 82px;
+  height: 15px;
+  float: left;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) 33px 5px no-repeat;
+}
+#_ProductDetails .good15_box .good15_pic dl a.down {
+  width: 82px;
+  height: 15px;
+  float: left;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) 33px -21px no-repeat;
+}
+#_ProductDetails .good15_box .good15_pic dl .small {
+  width: 84px;
+  float: left;
+  margin-top: 8px;
+  height: 460px;
+  overflow: hidden;
+}
+#_ProductDetails .good15_box .good15_pic dl .small a.on {
+  border: 1px solid #8ab800!important;
+}
+#_ProductDetails .good15_box .good15_pic dl .small a {
+  border: 1px solid #c9c9c9;
+  display: block;
+  margin-bottom: 8px;
+}
+#_ProductDetails .good15_box .good15_pic dl .small a img {
+  width: 82px;
+  height: 82px;
+  border: 0;
+}
+#_ProductDetails .good15_box .good15_pic .jqzoom {
+  float: right;
+  width: 500px;
+  height: 500px;
+  border: 1px solid #c9c9c9;
+  overflow: hidden;
+  margin-top: 0px;
+  position: relative;
+  cursor: pointer;
+}
+#_ProductDetails .good15_box .good15_pic .jqzoom .middleImg {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  display: none;
+}
+#_ProductDetails .good15_box .good15_pic .jqzoom #middleArea {
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  left: 0;
+  border: 1px solid gainsboro;
+  display: none;
+}
+#_ProductDetails .good15_box .good15_pic .bigArea {
+  position: absolute;
+  left: 630px;
+  display: none;
+  overflow: hidden;
+}
+#_ProductDetails .good15_box .good15_pic .bigArea .bigImg {
+  height: 1000px;
+  width: 1000px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+#_ProductDetails .good15_box .good15_number {
+  float: left;
+  width: 270px;
+  line-height: 45px;
+  color: #535353;
+}
+#_ProductDetails .good15_box .good15_collect {
+  float: right;
+  margin: 0 10px 0 15px;
+  display: inline;
+}
+#_ProductDetails .good15_box .good15_collect a {
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico_e7eb6dd1.gif) 0 -119px no-repeat;
+  line-height: 45px;
+  color: #535353;
+  padding-left: 20px;
+  display: block;
+}
+#_ProductDetails .good15_box .good15_collect a.on {
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico_e7eb6dd1.gif) 0 -154px no-repeat;
+}
+#_ProductDetails .good15_box .good15_share {
+  float: right;
+  width: 87px;
+  margin-top: 6px;
+  background-color: #fff;
+}
+#_ProductDetails .good15_box .good15_share a {
+  color: #666;
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+}
+#_ProductDetails .good15_box .good15_share dl {
+  position: relative;
+  z-index: 80;
+}
+#_ProductDetails .good15_box .good15_share dl dt {
+  height: 30px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  line-height: 30px;
+  background: url(//image.benlailife.com/webStatic/images/n_top/n_icon01_c2ce2a81.png) 69px 12px no-repeat;
+}
+#_ProductDetails .good15_box .good15_share dl dt s {
+  text-decoration: line-through;
+  line-height: 30px;
+}
+#_ProductDetails .good15_box .good15_share dl dd {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  width: 85px;
+  padding: 3px 0 10px;
+  display: none;
+}
+#_ProductDetails .good15_box .good15_share dl dd a {
+  margin-left: 7px;
+}
+#_ProductDetails .good15_intro {
+  float: right;
+  width: 570px;
+}
+#_ProductDetails .good15_intro .intro_name {
+  float: left;
+  width: 570px;
+  height: auto!important;
+  height: 68px;
+  min-height: 68px;
+  border-bottom: 1px solid #e0e0e0;
+}
+#_ProductDetails .good15_intro .intro_name h1 {
+  font: 800 18px/34px "Microsoft YaHei";
+  color: #4c4c4c;
+}
+#_ProductDetails .good15_intro .intro_sales {
+  float: left;
+  width: 570px;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 18px 0;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_price p {
+  float: left;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_price {
+  float: left;
+  width: 570px;
+  margin: 0 0 18px;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_price .drop {
+  color: #fff;
+  font-size: 14px;
+  background-color: #ff6900;
+  line-height: 26px;
+  padding: 0 8px;
+  margin-right: 10px;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_price .price {
+  font: 800 26px/26px "Microsoft YaHei";
+  color: #ff6900;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_price .notice {
+  margin: 3px 0 0 20px;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_price .notice a.on {
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico_e7eb6dd1.gif) 10px -63px no-repeat;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_price .notice a {
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico_e7eb6dd1.gif) 10px -31px no-repeat;
+  border: 1px solid #e7e7e7;
+  line-height: 18px;
+  color: #4c4c4c;
+  padding: 0 10px 0 25px;
+  display: block;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_price .notice a:hover {
+  border: 1px solid #91be16;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_app {
+  float: left;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_app dl {
+  float: left;
+  width: 125px;
+  height: 26px;
+  position: relative;
+  z-index: -999;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_app dl dt a {
+  float: left;
+  width: 130px;
+  font-weight: 100;
+  height: 26px;
+  background: url(//image.benlailife.com/webStatic/images/n_detail/app_ico_23ab52d9.png) 0 0 no-repeat #ff6900;
+  font-size: 14px;
+  color: #fff;
+  padding-left: 28px;
+  line-height: 26px;
+  text-decoration: none;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_app dd {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 26px;
+  width: 220px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_app dd p {
+  background-color: #f4f4f4;
+  line-height: 30px;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_app dd img {
+  width: 220px;
+}
+#_ProductDetails .good15_intro .intro_sales .intro_app dd em {
+  font-size: 14px;
+  font-weight: 700;
+}
+#_ProductDetails .good15_intro .good15_norm {
+  float: left;
+  width: 570px;
+  margin-top: 15px;
+}
+#_ProductDetails .good15_intro .good15_norm > dl {
+  float: left;
+  width: 570px;
+  padding-bottom: 10px;
+}
+#_ProductDetails .good15_intro .good15_norm > dl .gdproperty dl {
+  float: left;
+  width: 570px;
+  padding-bottom: 10px;
+}
+#_ProductDetails .good15_intro .good15_norm > dl .gdproperty dl dt {
+  float: left;
+  width: 65px;
+  color: #4c4c4c;
+  line-height: 30px;
+}
+#_ProductDetails .good15_intro .good15_norm > dl .gdproperty dl dd {
+  float: right;
+  width: 505px;
+  color: #4c4c4c;
+  line-height: 30px;
+}
+#_ProductDetails .good15_intro .good15_norm > dl .gdproperty dl dd ul {
+  width: 530px;
+}
+#_ProductDetails .good15_intro .good15_norm > dl .gdproperty dl dd ul li {
+  float: left;
+  display: inline;
+  padding: 1px;
+  margin: 0 10px 10px 0;
+  vertical-align: middle;
+}
+#_ProductDetails .good15_intro .good15_norm > dl .gdproperty dl dd ul li a.propon {
+  min-width: 10px;
+  display: inline-block;
+  border: 2px solid #90c000;
+  padding: 4px 14px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 18px;
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico05_f50941b4.gif) no-repeat 100% 14px;
+}
+#_ProductDetails .good15_intro .good15_norm > dl .gdproperty dl dd ul li a {
+  min-width: 10px;
+  border: 1px solid #e5e5e5;
+  display: inline-block;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 18px;
+  color: #626252;
+}
+#_ProductDetails .good15_intro .good15_norm > dl .gdproperty dl dd ul li a:hover {
+  border: 1px solid #90c000;
+  box-sizing: border-box;
+}
+#_ProductDetails .good15_intro .good15_buy {
+  float: left;
+  width: 570px;
+  margin-bottom: 20px;
+}
+#_ProductDetails .good15_intro .good15_buy .fl {
+  float: left!important;
+  display: inline;
+}
+#_ProductDetails .good15_intro .good15_buy dl {
+  float: left;
+  width: 570px;
+  height: 52px;
+}
+#_ProductDetails .good15_intro .good15_buy dl dt {
+  width: 75px;
+  float: left;
+  margin-right: 15px;
+}
+#_ProductDetails .good15_intro .good15_buy dl dt a {
+  float: left;
+  width: 19px;
+  height: 25px;
+  display: block;
+}
+#_ProductDetails .good15_intro .good15_buy dl dt input {
+  border: 1px solid #cdcdcd;
+  width: 54px;
+  height: 48px;
+  font: 400 24px/48px "Microsoft YaHei";
+  color: #626262;
+  text-align: center;
+  float: left;
+  outline: none;
+}
+#_ProductDetails .good15_intro .good15_buy dl dt a.up {
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) 0 -52px no-repeat;
+}
+#_ProductDetails .good15_intro .good15_buy dl dt a.down {
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) -20px -54px no-repeat;
+}
+#_ProductDetails .good15_intro .good15_buy dl dd {
+  float: left;
+}
+#_ProductDetails .good15_intro .good15_buy dl dd .buy_btn {
+  float: left;
+  margin-right: 15px;
+}
+#_ProductDetails .good15_intro .good15_buy dl dd .buy_btn a {
+  width: 182px;
+  height: 52px;
+  display: block;
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detailsp_btn_c8171162.gif) no-repeat;
+}
+#_ProductDetails .good15_intro .good15_buy dl dd .buy_btn a.btn01 {
+  background-position: 0 0;
+}
+#_ProductDetails .good15_intro .good15_buy dl dd .buy_btn #AddCart:hover {
+  opacity: 0.8;
+}
+#_ProductDetails .good15_intro .good15_buy dl dd .buy_evaluate {
+  color: #4c4c4c;
+  line-height: 52px;
+  float: left;
+}
+#_ProductDetails .good15_intro .good15_buy dl dd .buy_evaluate font {
+  font: 400 18px/52px "Microsoft YaHei";
+  color: #ff6900;
+  padding: 0 8px;
+}
+#_ProductDetails .good15_intro .good15_buy dl dd .buy_evaluate a {
+  text-decoration: none;
+  color: #4c4c4c;
+}
+#_ProductDetails .good15_intro .good15_buy dl dd .buy_evaluate a span {
+  color: #ff6900;
+  padding: 0 5px;
+}
+#_ProductDetails .good15_intro .good15_buy ul {
+  margin: 10px 20px 0 0;
+  float: left;
+}
+#_ProductDetails .good15_intro .good15_buy ul li {
+  line-height: 24px;
+  border: 1px solid #f1e1d3;
+  background-color: #fff5ec;
+  color: #616261;
+  padding: 0 8px;
+  position: relative;
+  z-index: 0;
+  float: left;
+}
+#_ProductDetails .good15_intro .good15_buy ol {
+  margin: 10px 0 0;
+  float: left;
+}
+#_ProductDetails .good15_intro .good15_buy ol li {
+  line-height: 26px;
+  color: #f92121;
+  font-weight: 700;
+  float: left;
+  margin-right: 20px;
+}
+#_ProductDetails .good15_intro .good15_buy ol li s {
+  float: left;
+  margin: 6px 5px 0 0;
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico_e7eb6dd1.gif) 0 0 no-repeat;
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+#_ProductDetails .good15_intro .good15_today {
+  float: left;
+  width: 570px;
+  padding-bottom: 25px;
+}
+#_ProductDetails .good15_intro .good15_today dl {
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  z-index: 0;
+}
+#_ProductDetails .good15_intro .good15_today dl .clear {
+  clear: both;
+}
+#_ProductDetails .good15_intro .good15_prompt {
+  float: left;
+  width: 570px;
+  padding-bottom: 20px;
+  line-height: 18px;
+}
+a {
+  color: #666;
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+}
+.list15_record {
+  width: 208px;
+  float: left;
+  border-top: 2px solid #8ab700;
+  border-left: 1px solid #efefe8;
+  border-right: 1px solid #efefe8;
+  margin-bottom: 15px;
+}
+.list15_record dl dt {
+  background-color: #fafafa;
+  color: #6b6b56;
+  font: 400 16px/35px "微软雅黑";
+  padding-left: 22px;
+}
+.list15_record dl dt a {
+  float: right;
+  border: 1px solid #8ab700;
+  font: 400 12px/18px "微软雅黑";
+  color: #8ab700;
+  display: inline-block;
+  padding: 0 8px;
+  margin: 7px 10px 0 0;
+}
+.list15_record dl dd {
+  border-bottom: 1px solid #efefe8;
+  padding: 10px;
+  width: 206px;
+  float: left;
+}
+.list15_record dl dd a img {
+  border: 0;
+}
+.list15_record dl dd .pic img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-right: 5px;
+  border: 0;
+}
+.list15_record dl dd .name a {
+  float: right;
+  width: 91px;
+  height: 36px;
+  font: 400 12px/18px "Microsoft YaHei";
+  color: #3e4141;
+  text-overflow: clip;
+  display: block;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.list15_record dl dd .name a:hover {
+  color: #ff6900;
+}
+.list15_record dl dd .price {
+  color: #ff6900;
+  line-height: 36px;
+}
+.fr {
+  float: right;
+  display: inline;
+}
+.box980 {
+  width: 980px;
+}
+.good15_compose {
+  width: 980px;
+  padding-bottom: 15px;
+}
+.good15_compose dl dt {
+  background-color: #fafafa;
+  border-bottom: 1px solid #efefe7;
+  border-left: 1px solid #efefe7;
+  border-right: 1px solid #efefe7;
+  border-top: 2px solid #8ab700;
+  height: 33px;
+}
+.good15_compose dl dt em {
+  float: left;
+  position: relative;
+  z-index: 70;
+  height: 34px;
+  width: 122px;
+}
+.good15_compose dl dt em a {
+  color: #79a000;
+  line-height: 44px;
+  padding: 0 4px 0 0;
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -1px;
+  width: 118px;
+  text-align: center;
+  height: 44px;
+  overflow: hidden;
+  text-overflow: clip;
+}
+.good15_compose dl dt em a:hover,
+.good15_compose dl dt em a.on {
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) right -194px no-repeat;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+.good15_compose dl dd {
+  border-bottom: 1px solid #efefe7;
+  border-left: 1px solid #efefe7;
+  border-right: 1px solid #efefe7;
+  float: left;
+  width: 978px;
+}
+.good15_compose dl dd .sku_box {
+  overflow: hidden;
+  height: 230px;
+  width: 640px;
+  margin: 20px 0 20px 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  float: left;
+}
+.good15_compose dl dd .sku_box ul {
+  float: left;
+  height: 230px;
+}
+.good15_compose dl dd .sku_box ul li {
+  float: left;
+  width: 120px;
+}
+.good15_compose dl dd .sku_box ul li a {
+  color: #666;
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+}
+.good15_compose dl dd .sku_box ul li img {
+  width: 97px;
+  height: 97px;
+  display: inline;
+  opacity: 1;
+}
+.good15_compose dl dd .sku_box ul li input {
+  outline: 0;
+}
+.good15_compose dl dd .sku_box ul li .pic {
+  width: 120px;
+  text-align: center;
+}
+.good15_compose dl dd .sku_box ul li .name {
+  width: 120px;
+  height: 36px;
+  text-overflow: clip;
+  display: block;
+  overflow: hidden;
+  float: left;
+  margin-top: 15px;
+}
+.good15_compose dl dd .sku_box ul li .name a {
+  color: #1b1b15;
+  line-height: 18px;
+}
+.good15_compose dl dd .sku_box ul li .price {
+  color: #ff6900;
+  line-height: 28px;
+  text-align: center;
+  width: 120px;
+}
+.good15_compose dl dd .sku_box ul li .price span {
+  color: #b9b9a8;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+.good15_compose dl dd .sku_box ul li .digital {
+  text-align: center;
+  width: 120px;
+  margin-top: 5px;
+  color: #999;
+  font-weight: 700;
+  font-size: 16px;
+}
+.good15_compose dl dd .sku_box ul .plus {
+  float: left;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  margin: 45px 18px 0;
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico_e7eb6dd1.gif) 0 -204px no-repeat;
+}
+.good15_compose ol {
+  float: right;
+  width: 280px;
+  border-left: 1px solid #e7e7e7;
+  margin: 20px 0;
+  height: auto!important;
+  height: 200px;
+  min-height: 200px;
+  padding-top: 30px;
+}
+.good15_compose ol li {
+  margin-left: 50px;
+  height: 120px;
+}
+.good15_compose ol li p {
+  line-height: 18px;
+}
+.good15_compose ol li p span {
+  color: #ff6900;
+  font-weight: 700;
+}
+.good15_compose ol .good15_buy_btn {
+  margin-left: 50px;
+}
+.good15_compose ol .good15_buy_btn a.btn01 {
+  background-position: 0 -212px;
+}
+.good15_compose ol .good15_buy_btn a {
+  width: 122px;
+  height: 30px;
+  display: block;
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detailsp_btn_c8171162.gif) no-repeat;
+}
+.good15_compose ol .good15_buy_btn a:hover {
+  opacity: 0.8;
+}
+.good15_detail {
+  float: left;
+  width: 980px;
+  position: relative;
+  z-index: 7;
+  background-color: #fafafa;
+  border-bottom: 1px solid #efefe7;
+  border-left: 1px solid #efefe7;
+  border-right: 1px solid #efefe7;
+  border-top: 2px solid #8ab700;
+  height: 41px;
+  margin-bottom: 5px;
+}
+.good15_detail dl dt {
+  float: left;
+  width: 672px;
+}
+.good15_detail dl dt em {
+  float: left;
+  position: relative;
+  z-index: 70;
+  height: 34px;
+  width: 112px;
+}
+.good15_detail dl dt em a {
+  color: #79a000;
+  line-height: 34px;
+  padding: 10px 4px 0 0;
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -1px;
+  width: 108px;
+  text-align: center;
+  height: 34px;
+  overflow: hidden;
+  text-overflow: clip;
+  font-weight: 400;
+  font-family: "宋体";
+  font-size: 12px;
+}
+.good15_detail dl dt em a:hover,
+.good15_detail dl dt em a.on {
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico2_aee48cd9.png) right -194px no-repeat;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  padding-top: 5px;
+  height: 39px;
+}
+.good15_detail dl dd {
+  float: right;
+  margin: 7px 13px 0 0;
+}
+.good15_detail dl dd p {
+  float: left;
+  margin-right: 25px;
+  font: 800 18px/30px "Microsoft YaHei";
+  color: #ff6900;
+}
+.good15_detail dl dd .good15_buy_btn {
+  float: left;
+  height: 30px!important;
+  width: 122px;
+}
+.good15_detail dl dd .good15_buy_btn a {
+  width: 122px;
+  height: 30px;
+  display: block;
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detailsp_btn_c8171162.gif) no-repeat;
+}
+.good15_detail dl dd .good15_buy_btn a.btn01 {
+  background-position: 0 -212px;
+}
+.box980 {
+  width: 980px;
+}

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>商品列表页面</title>
+		
+		<link rel="stylesheet" type="text/css" href="../js/lib/bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/css/jquery.idcode.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/less/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/less/reginter.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/less/login.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/less/list.css"/>
+		
+		<!--[if lt IE 9]>
+	    <script src="../lib/html5shiv/html5shiv.min.js" ></script>
+	    <script src="../lib/respond/respond.min.js" ></script>
+	    <![endif]-->
+	    
+	    <script src="../js/lib/jquery/jquery.js" ></script>
+	    <script src="../js/lib/bootstrap/js/bootstrap.js"></script>
+	    <script src="../js/jquery.idcode.js" ></script>
+		<script src="../js/index.js" ></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<!--<script src="../js/register.js"></script>-->
+		<script src="../js/login.js"></script>
+		<script src="../js/list.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header">
+			<!--1start-->
+			<div class="header-top-box">
+				<div class="wraper clear">
+					<div class="login">
+						<a class="a1">
+							<p>您好,请</p>
+							<em></em>
+						</a>
+						<!--11-->
+						<dd class="ddd">
+							<div class="user_login">
+								<a href="javascript:void(0)" class="fl"><p>15700112057</p></a>
+								<a href="login.html" class="out">[退出登录]</a>
+							</div>
+							<em><a href="javascript:void(0)">级别<br><span class="user_lh">注册会员</span></a></em>
+							<em><a href="javascript:void(0)">积分<br><span>0分</span><br><font>(0.0元)</font></a></em>
+							<em class="b0"><a href="javascript:void(0)">优惠券<br><span class="user_lh">5张</span></a></em>
+						</dd>
+						<!--11-->
+						<a href="javascript:void(0)" >[登录]</a>
+						<a href="javascript:void(0)" >[注册]</a>
+						<a href="javascript:void(0)"  >[机构会员]</a>
+					</div>
+					<div class="city">
+						<a>送至:
+							<font>茂名</font>
+						</a>
+					</div>
+					<div class="head15_menu">
+						<ul>
+							<li><s></s><div class="menu_word"><a >我的订单</a></div></li>
+							<li><div class="menu_word"><a >本来礼品</a></div></li>
+							<li><div class="head15_twocode"><dl><dt><a >掌上本来</a><div class="head15_bg"></div></dt><dd ><img src="//image.benlailife.com/webStatic/images/top/App_QR_Code_3de39ad3.png" width="100" height="100" alt=""><p>扫描下载客户端</p></dd></dl></div></li>
+							<li><div class="head15_service"><dl><dt><a >客户服务</a><div class="head15_bg"></div></dt><dd class="d2"><p><a  class="zhiCustomBtn" data-type="easemob">在线客服</a></p><p><a  target="_blank">联系客服</a></p><p><a  target="_blank">销售热线</a></p><p><a  target="_blank">帮助中心</a></p></dd></dl></div></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--1end-->
+			<!--2start-->
+			<div  class="carousel slide " data-ride="carousel">
+		      <div class="carousel-inner" role="listbox">
+		        <div class="item active" >
+		        	<img src="../images/dtcz.jpg">
+		        </div>
+		         <div class="item" >
+		        	<img src="../images/dtjbl.jpg">
+		        </div>
+		         <div class="item" >
+		        	<img src="../images/dtpfbk1.jpg">
+		        </div>
+		         <div class="item" >
+		        	<img src="../images/dtyb.jpg">
+		        </div>
+		         <div class="item" >
+		        	<img src="../images/dtyzf9.jpg">
+		        </div>
+		      </div>
+		    </div>
+			<!--2end-->
+			<!--3start-->
+			<div class="header-logo-box">
+				<div class="wraper clear">
+					<div class="fl">
+						<a ><img src="//image.benlailife.com/webStatic/images/n_top/n_logo_b20f2ffe.gif"></a>
+					</div>
+					<!--搜索-->
+					<div class="head15_search">
+						<div class="search_word">
+							<em><a  href="javascript:void(0)" >佳沛奇异果</a></em>
+							<em><a  href="javascript:void(0)" >月饼</a></em>
+							<em><a  href="javascript:void(0)" >阳澄湖大闸蟹</a></em>
+							<em><a  href="javascript:void(0)" >厄瓜多尔白虾</a></em>
+							<em><a  href="javascript:void(0)" >澳洲牛腩</a></em>
+							<em><a  href="javascript:void(0)" >李玉双大米</a></em>
+							<em><a >阳澄湖鲜活六月黄</a></em>
+						</div>
+						<div class="search_box">
+							<input type="text" benlai-id="searchkeyword" filter="off" value="陕西大荔冬枣69元3kg">
+							<a  id="btnsearch"></a>
+						</div>
+					</div>
+					<!--start购物车-->
+					<div class="head15_buy">
+						<dl>
+							<dt>
+								<div id="HeaderCartCount" class="buy_quantity">0</div>
+								<a ><s></s>购物车</a>
+								<div class="head15_bg"></div>
+							</dt>
+							<dd id="cartListView">
+								<div class="none_sku">购物车中还没有商品，赶紧选购吧！</div>
+							</dd>
+						</dl>
+					</div>
+					<!--end购物车-->
+					<!--我的本来-->
+					<div class="head15_my">
+						<dl id="dtIsNoLogin">
+							<dt>
+								<a href="/UserHome/Index"><s></s>我的本来</a>
+								<div class="head15_bg"></div>
+							</dt>
+							<dd>
+								<div id="my_nickname" class="my_tit">
+									<div class="login">
+										<span>您好，请</span><a >[登录]</a>
+									</div>
+								</div>
+								<ul>
+									<li class="my_left">
+										<em><a href="javascript:void(0)" >订单状态查询</a>(<span id="un_order" class="zero">0</span>)</em>
+										<em><a href="javascript:void(0)"  >待支付订单</a>(<span id="un_pay" class="zero">0</span>)</em>
+										<em><a href="javascript:void(0)" >待评价商品</a>(<span id="un_judge" class="zero">0</span>)</em>
+										<em><a href="javascript:void(0)" >优惠券</a>(<span id="my_quan" class="zero">0</span>)</em>
+										<em><a href="javascript:void(0)" >我的会员</a>&gt;</em>
+										<em><a href="javascript:void(0)" >我的积分</a>&gt;</em>
+									</li>
+									<li class="my_right">
+										<em><a href="javascript:void(0)"  target="_blank">我的订单</a>&gt;</em>
+										<em><a href="javascript:void(0)"  target="_blank">我的宅配</a>&gt;</em>
+										<em><a href="javascript:void(0)"  target="_blank">我的收藏</a>&gt;</em>
+										<em><a href="javascript:void(0)"  target="_blank">我的退货</a>&gt;</em>
+										<em><a href="javascript:void(0)"  target="_blank">充&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;值</a>&gt;</em>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<!--end我的本来-->
+				</div>
+			</div>
+			<!--3end-->
+			<!--导航条start-->
+			<div class="head15_menu_bg">
+				<div class="wraper clear">
+					<div class="head15_menu_box">
+						<!--所有商品分类 开始-->
+						<div class="head15_menu_all_OnlineCategory">
+							<div class="tit_all"><a >所有商品分类</a></div>
+							<div class="tit_sort" >
+								
+								<dl>
+									<dt class="sort_bg2382" style="position: absolute;"><a>水果</a></dt>
+									<dd>
+										<div class="menu_list">
+											<ul>
+												<li class="clear">
+													<div id="list_l"><a href="javascript:void(0)">热门推荐 </a></div>
+													<div id="list_r">
+														<em><a href="javascript:void(0)" >火龙果</a></em>
+														<em><a href="javascript:void(0)">佳沛奇异果</a></em>
+														<em><a href="javascript:void(0)">进口水果</a></em>
+														<em><a href="javascript:void(0)">热带水果</a></em>
+													</div>
+												</li>
+												<li class="clear">
+													<div id="list_l" ><a href="javascript:void(0)">热门推荐 </a></div>
+													<div id="list_r">
+														<em><a href="javascript:void(0)" >火龙果</a></em>
+														<em><a href="javascript:void(0)">佳沛奇异果</a></em>
+														<em><a href="javascript:void(0)">进口水果</a></em>
+														<em><a href="javascript:void(0)">热带水果</a></em>
+													</div>
+												</li>
+												<li class="clear">
+													<div id="list_l"><a href="javascript:void(0)">热门推荐 </a></div>
+													<div id="list_r">
+														<em><a href="javascript:void(0)" >火龙果</a></em>
+														<em><a href="javascript:void(0)">佳沛奇异果</a></em>
+														<em><a href="javascript:void(0)">进口水果</a></em>
+														<em><a href="javascript:void(0)">热带水果</a></em>
+														<em><a href="javascript:void(0)">佳沛奇异果</a></em>
+														<em><a href="javascript:void(0)">进口水果</a></em>
+														<em><a href="javascript:void(0)">热带水果</a></em>
+														<em><a href="javascript:void(0)">佳沛奇异果</a></em>
+														<em><a href="javascript:void(0)">进口水果</a></em>
+														<em><a href="javascript:void(0)">热带水果</a></em>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt class="sort_bg2382"><a >镇店之宝</a></dt>
+								</dl>
+								<dl>
+									<dt class="sort_bg2382"><a >蔬菜</a></dt>
+								</dl>
+								<dl>
+									<dt class="sort_bg2382"><a >肉禽蛋品</a></dt>
+								</dl>
+								<dl>
+									<dt class="sort_bg2382"><a >水产海鲜</a></dt>
+								</dl>
+								<dl>
+									<dt class="sort_bg2382"><a >熟食面点</a></dt>
+								</dl>
+								<dl>
+									<dt class="sort_bg2382"><a >粮油副食</a></dt>
+								</dl>
+								<dl>
+									<dt class="sort_bg2382"><a >肉禽蛋品</a></dt>
+								</dl>
+								<dl>
+									<dt class="sort_bg2382"><a >烘焙乳品</a></dt>
+								</dl>
+								<dl>
+									<dt class="sort_bg2382"><a >休闲食品</a></dt>
+								</dl>
+								<dl>
+									<dt class="sort_bg2382"><a >酒水茶饮</a></dt>
+								</dl>
+								
+							</div>
+						</div>
+						<!--所有商品分类 开始-->
+						<div class="head15_menu_big">
+							<ul>
+								<li><a href="javascript:void(0)">首页</a></li>
+								<li><img src="../images/newc.jpg"><a >亚洲馆</a></li>
+								<li><a href="javascript:void(0)" >全国配</a></li>
+								<li><a href="javascript:void(0)" >充值</a></li>
+								<li><a href="javascript:void(0)" >兑换专区</a></li>
+								<li><a href="javascript:void(0)" >促销</a></li>
+								<li><a href="javascript:void(0)" >台创园</a></li>
+								<li><a href="javascript:void(0)" >本来礼品</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--导航条end-->
+		</div>
+		<!--end头部-->
+		
+		<div class="content wraper clear">
+			<div class="path15  clear" id="path">
+           		 <a href="javascript:void(0)">首页</a> &gt; <font id="ProductNameMenu">新西兰 优露欧兰天然矿泉水 10L</font>
+       		</div>
+       		 <div id="_ProductDetails"  class="clear">
+       		 	<!--左边-->
+       		 	<div class="good15_box clear">
+       		 		<!--图片滚动区域-->
+       		 		<div class="good15_pic">
+       		 			<dl>
+       		 				<dt><a href="javascript:void(0);" id="id1" class="up on"></a></dt><!--上-->
+							<dd id="smallPic" class="small">
+				                <!--<a href="javascript:void(0)"  class="on">
+				                    <img id="PicSmall_0" src="../images/list1.jpg"  class="smallImg">
+				                </a>
+								<a href="javascript:void(0)"  >
+				                    <img id="PicSmall_1" src="../images/list2.jpg" class="smallImg">
+				                </a>
+				                <a href="javascript:void(0)"  >
+				                    <img id="PicSmall_1" src="../images/list3.jpg" class="smallImg">
+				                </a>
+				                <a href="javascript:void(0)"  >
+				                    <img id="PicSmall_1" src="../images/list4.jpg" class="smallImg">
+				                </a>
+				                <a href="javascript:void(0)"  >
+				                    <img id="PicSmall_1" src="../images/list5.jpg" class="smallImg">
+				                </a>
+				                <a href="javascript:void(0)" >
+				                    <img id="PicSmall_0" src="../images/list1.jpg" class="smallImg">
+				                </a>-->
+							</dd>
+				            <dt><a href="javascript:void(0)" id="id2" class="down"></a></dt><!--下-->
+				        </dl>
+				        <!--小图小区域-->
+       		 			<div id="showjq" class="jqzoom">
+       		 				<!--<img src="../images/list-01.jpg" class="show middleImg">
+       		 				<img src="../images/list-02.jpg" class="middleImg">
+       		 				<img src="../images/list-03.jpg" class="middleImg">
+       		 				<img src="../images/list-04.jpg" class="middleImg">
+       		 				<img src="../images/list-05.jpg" class="middleImg">
+       		 				<img src="../images/list-01.jpg" class="middleImg">-->
+       		 				<!--<div id="middleArea"></div>-->   
+       		 			</div>
+       		 			<!--大图大区域-->
+       		 			<div  class="jqzoom  bigArea">
+       		 				<!--<img src="../images/list-01.jpg" class="bigImg show" />
+       		 				<img src="../images/list-02.jpg" class="bigImg" />
+       		 				<img src="../images/list-03.jpg" class="bigImg" />
+       		 				<img src="../images/list-04.jpg" class="bigImg" />
+       		 				<img src="../images/list-05.jpg" class="bigImg" />
+       		 				<img src="../images/list-01.jpg" class="bigImg" />-->
+       		 			</div>
+       		 			
+       		 		</div>
+       		 		<!--商品编号-->
+	       		 	<div class="good15_number">商品编号：<span id="Product_ProductID">P0000056362</span></div>
+	       		 	<!--收藏-->
+	       		 	<div class="good15_collect" id="good15_collect">
+	        			<a href="javascript:void(0);" hidefocus="true" class="on" id="AddWish" name="72631">收藏</a>
+	       		 	</div>
+	       		 	<!--分享-->
+	       		 	<div class="good15_share">
+				        <dl>
+				            <dt><s></s>分享到</dt>
+				            <dd>
+				                <a href="javascript:void(0)"  id="site-sina" >
+				                    <img src="//image.benlailife.com/webStatic/images/n_detail/detail_ico13_bd12b9eb.gif" width="16" height="16" alt="">
+				                </a>
+				                <a href="javascript:void(0)" id="site-qzone" >
+				                    <img src="//image.benlailife.com/webStatic/images/n_detail/detail_ico14_b8a43b0e.gif" width="16" height="16" alt="">
+				                </a>
+				                <a href="javascript:void(0)"  id="site-qq" >
+				                    <img src="//image.benlailife.com/webStatic/images/n_detail/detail_ico15_2642cae0.gif" width="16" height="16" alt="">
+				                </a>
+				
+				            </dd>
+				        </dl>
+				    </div>
+       		 	</div>
+       		 	<!--左边结束-->
+       		 	<!--右边-->
+       		 	<div class="good15_intro clear">
+       		 		<div class="intro_name">
+       		 			<h1 ></h1>	
+       		 		</div>
+       		 		<div class="intro_sales">
+        				<div class="intro_price" id="intro_price">
+        					<p class="drop"></p>
+        					<p class="price"></p>
+        					<p class="notice"><a href="javascript:void(0)" id="jiangjia" class="on" >降价通知</a></p>
+        					<p></p>
+        				</div>
+        				<div class="intro_app" id="intro_app">
+        					<div class="intro_app">
+        						<dl class="clear">
+        							<dt class="clear"><a href="#">&nbsp;手机购买</a></dt>
+        							<dd class="clear">
+        								<p>移动下单，惊喜连连</p>
+        								<img src="https://image.benlailife.com/webStatic/images/top/App_QR_Code_3de39ad3.png">
+        								<em>扫描下载客户端</em>
+        							</dd>
+        						</dl>
+        					</div>
+        				</div>
+    				</div>
+    				<div class="good15_norm">
+						<dl>
+							<div class="gdproperty">
+								<dl>
+									<dt>品牌：</dt>
+									<dd>
+										<ul>
+											<li attributevaluesysno="26262"><a class="propon"><span>优露欧兰</span></a></li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+							<div class="gdproperty">
+								<dl>
+									<dt>规格：</dt>
+									<dd>
+										<ul>
+											<li ><a class="propon"><span>10L</span></a></li>
+											<li  ><a><span>330ml*24</span></a></li>
+											<li ><a><span>500ml*24</span></a></li>
+										</ul>
+									</dd>
+								</dl>
+							</div>        
+						</dl>
+
+   					</div>
+       		 		<!--<div class="good15_buy"></div>-->
+       		 		<div class="good15_buy">
+				        <div class="bgright fl">
+				            <div class="number">
+				                <div class="left">
+				                    <dl>
+				                        <dt>
+				                            <input type="text" class="textgt_n" id="textgtSum" value="1">
+				
+				                            <a class="up" id="up" href="javascript:void(0)" ></a>
+				                            <a class="down" id="dow" href="javascript:void(0)"></a>
+				                        </dt>
+				                        <dd>
+				                            <div id="AddCartDiv" class="buy_btn">
+				                            	<a class="btn01" id="AddCart" href="javascript:void(0)"> </a>
+				                            </div>
+				                            
+				                            <div class="buy_evaluate">
+				                            	 好评率<font id="span_scoreCount">99%</font>
+				                                (<a href="javascript:void(0)"><span>3261</span>人评价</a>)
+				                            </div>
+				
+				                        </dd>
+				                	</dl>
+				                </div>
+								<div class="right"></div>
+							</div>
+				        </div>
+				        <ul><li id="limitDiv" style="display:none;"></li></ul>
+				        <ol><li><s></s>该商品不支持使用优惠券</li></ol>
+				
+				    </div>
+       		 		<div class="good15_today"></div>
+       		 		<div class="good15_prompt"></div>
+       		 	</div>
+       		 	<!--右边结束-->
+       		 </div>
+       		 	<!--左侧浏览记录-->
+				<div class="wraper clear">
+					<div class="list15_record">
+						<dl>
+							<dt><a href="javascript:void(0)"  class="del" >清空</a>浏览记录</dt>
+							<dd>   
+								
+								<p class="pic"><a href="javascript:void(0)"><img src="../images/list1.jpg"></a></p>        
+								<p class="name"><a href="javascript:void(0)">新西兰 优露欧兰天然矿泉水 10</a></p>       
+								<p class="price">&nbsp;￥69.00</p>
+							</dd>
+							<dd>   
+								
+								<p class="pic"><a href="javascript:void(0)"><img src="../images/list1.jpg"></a></p>        
+								<p class="name"><a href="javascript:void(0)">新西兰 优露欧兰天然矿泉水 10</a></p>       
+								<p class="price">&nbsp;￥69.00</p>
+							</dd>
+							<dd>   
+								
+								<p class="pic"><a href="javascript:void(0)"><img src="../images/list1.jpg"></a></p>        
+								<p class="name"><a href="javascript:void(0)">新西兰 优露欧兰天然矿泉水 10</a></p>       
+								<p class="price">&nbsp;￥69.00</p>
+							</dd>
+						</dl>
+						
+					</div>
+					<!--右侧布局-->
+					<div class="box980 fr">
+						<!--优惠组合-->
+						<div class="good15_compose" id="SaleRuleList" style="overflow: hidden;" > 
+							<dl>
+								<dt>
+									<em><a href="javascript:void(0);" class="on">经常一起购买</a></em>
+								</dt>
+								<dd>
+									<div class="sku_box">
+										<ul>                                
+											<li>                                    
+												<div class="pic">                                        
+													<a href="javascript:void(0)">                                           
+														<img style="width: 97px; height: 97px; display: inline; opacity: 1;" src="../images/xq.jpg">                                        
+													</a>                                   
+												</div>                                  
+												<div class="name">                                       
+													<a href="javascript:void(0)" >新西兰 优露欧兰天然矿泉水 10L</a>                                  
+												</div>                                  
+												<div class="price">￥69.0<span></span></div>                                    
+												<div class="digital">                                     
+													<input type="checkbox" checked="checked" id="suixinpei_72631" value="72631" name="suixinpei" style="display:none">                                      
+													<input type="hidden" id="suixinpei_bp_72631"  name="suixinpei_bp" value="69.000000"><!--原价-->                                     
+													<input type="hidden" id="suixinpei_cp_72631" name="suixinpei_cp" value="69.000000"><!--现价-->                                  
+												</div>                                                                               
+											</li>                                                                           
+										</ul>
+										<ul id="SaleRulePList">
+											<li class="plus"></li>
+											<li>                                       
+												<div class="pic">                                            
+													<a href="javascript:void(0)" >                                            
+														<img style="width: 97px; height: 97px; display: inline; opacity: 1;" src="../images/xq.jpg">
+													</a>
+												</div>                                  
+												<div class="name">                                           
+													<a href="javascript:void(0)">昆仑山雪山矿泉水510ml*12<font class="cleb6100 ml5">天然小团分子弱碱水，除日常饮用外，也宜泡茶、煲汤。</font></a>                                            
+												</div>                                        
+												<div class="price">￥53.50<span></span></div>                                        
+												<div class="digital">                                           
+													<input type="checkbox" id="suixinpei_57171"  checked="checked" style="width:20px;height:20px;" name="suixinpei" >                                        
+													<input type="hidden" id="suixinpei_bp_57171"  name="suixinpei_bp" value="55.50"><!--原价-->                                           
+													<input type="hidden" id="suixinpei_cp_57171"  name="suixinpei_cp" value="53.50"><!--现价-->                                        
+												</div>                                   
+											</li>
+											<li class="plus"></li>
+											<li>                                       
+												<div class="pic">                                            
+													<a href="javascript:void(0)" >                                            
+														<img style="width: 97px; height: 97px; display: inline; opacity: 1;" src="../images/xq.jpg">
+													</a>
+												</div>                                  
+												<div class="name">                                           
+													<a href="javascript:void(0)">昆仑山雪山矿泉水510ml*12<font class="cleb6100 ml5">天然小团分子弱碱水，除日常饮用外，也宜泡茶、煲汤。</font></a>                                            
+												</div>                                        
+												<div class="price">￥53.50<span></span></div>                                        
+												<div class="digital">                                           
+													<input type="checkbox" id="suixinpei_57171"  checked="checked" style="width:20px;height:20px;" name="suixinpei" >                                        
+													<input type="hidden" id="suixinpei_bp_57171"  name="suixinpei_bp" value="55.50"><!--原价-->                                           
+													<input type="hidden" id="suixinpei_cp_57171"  name="suixinpei_cp" value="53.50"><!--现价-->                                        
+												</div>                                   
+											</li>
+											<li class="plus"></li>
+											<li>                                       
+												<div class="pic">                                            
+													<a href="javascript:void(0)" >                                            
+														<img style="width: 97px; height: 97px; display: inline; opacity: 1;" src="../images/xq.jpg">
+													</a>
+												</div>                                  
+												<div class="name">                                           
+													<a href="javascript:void(0)">昆仑山雪山矿泉水510ml*12<font class="cleb6100 ml5">天然小团分子弱碱水，除日常饮用外，也宜泡茶、煲汤。</font></a>                                            
+												</div>                                        
+												<div class="price">￥53.50<span></span></div>                                        
+												<div class="digital">                                           
+													<input type="checkbox" id="suixinpei_57171"  checked="checked" style="width:20px;height:20px;" name="suixinpei" >                                        
+													<input type="hidden" id="suixinpei_bp_57171"  name="suixinpei_bp" value="55.50"><!--原价-->                                           
+													<input type="hidden" id="suixinpei_cp_57171"  name="suixinpei_cp" value="53.50"><!--现价-->                                        
+												</div>                                   
+											</li>
+										</ul>
+									</div>
+									<ol style="z-index:1;">                                                                            
+										<li>                                                                            
+											<p>已选择<span id="result_count">2</span>个商品</p>                                          
+											<p>搭配价：<span id="result_CP">122.50</span></p>                                       
+										</li>                                                                           
+										<li class="good15_buy_btn">                                                                     
+											<a href="javascript:void(0)" type="button" value="" class="btn01" id="btn_addCart"></a>                                                                           
+										</li>                                                                       
+									</ol>
+									<!--<ol></ol>-->
+								</dd>
+							</dl>
+						</div>
+						<!--优惠组合-->
+						<!--商品详情导航-->
+						<div class="good15_detail clear" id="good15_detail">
+							<dl>
+								<dt id="navList">
+									<em> <a href="#sublist01" class="on">商品详情</a></em>
+									<em><a href="#sublist05" class="">服务保障</a></em>
+									<em><a href="#tabdiv6" class="">全部评论</a></em>
+								</dt>
+								<dd>
+									<div class="dtl_btn">
+                    					<p>￥69.00</p>
+					                    <div class="good15_buy_btn">
+					                        <a class="btn01" id="nav_buy_btn" href="javascript:void(0)"  style="cursor:pointer;"></a>                
+					                   	</div>
+					                </div>
+								</dd>
+							</dl>
+						</div>
+						<!--商品详情导航节结束-->
+						<div class="box980 clear">
+							<div class="good15_all clear">
+								<dl class="dl1 clear">
+									<!--------------------------------------------------11-->
+									<a name="sublist01" id="sublist01"></a>
+									<dt class="dt1 clear demo1">
+										<img src="../images/feature.gif" style="margin-bottom: 15px;"/>
+									</dt>
+									<dd class="clear demo2">
+										<img src="../images/xq1.jpg" />
+										<img src="../images/xq2.jpg" />
+										<img src="../images/xq3.jpg" />
+										<img src="../images/xq4.jpg" />
+										<img src="../images/xq5.jpg" />
+										<img src="../images/xq6.jpg" />
+										<img src="../images/xq7.jpg" />
+										<img src="../images/xq8.jpg" />
+									</dd>
+								</dl>
+								<dl style="position: relative;">
+									<a name="sublist01" id="sublist01"></a>
+									<!--------------------------------------------------22-->
+									<dt class="dt2">
+										<img src="../images/se1.png" style="margin-bottom: 15px; margin-top: 10px;" />
+									</dt>
+									<div class="detl_com">
+										<p class="p1">
+											<img src="../images/s1.jpg"/>
+											<img src="../images/s2.jpg"/>
+											<img src="../images/s3.jpg"/>
+										</p>
+									</div>
+								</dl>
+							</div>
+						</div>
+						<!--一下内容在这里写-->
+						
+						<!--一下内容在这里写-->
+					</div>
+				</div>
+				<!--//最大盒子结束-->
+			
+		</div>
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--start底部-->
+		<div class="bar ">
+			<div class="wraper ">
+				<dl>
+                    <dt class="ico01"></dt>
+                    <dd><span>18小时低温</span>全程冷链配送</dd>
+                 </dl>
+                 <dl>
+                    <dt class="ico02"></dt>
+                    <dd><span>0时差基地直供</span>农田到餐桌</dd>
+                </dl>
+                <dl>
+                        <dt class="ico03"></dt>
+                        <dd><span>43项检测</span>安全无农残</dd>
+                </dl>
+                <dl>
+                    <dt class="ico04"></dt>
+                    <dd><span>7*24小时营业</span>全年无休</dd>
+                </dl>
+                <dl>
+                    <dt class="ico05"></dt>
+                  	<dd><span id="SpanFreeSecShipPrice">满168免运费</span>今日下单次日送达</dd>
+                </dl>
+			</div>
+		</div>
+		<div class="footert wraper clear">
+            <dl>
+                  <dt class="xs">新手指南</dt>
+                  <dd><a href="javascript:void(0)">购物流程</a></dd>
+                  <dd><a href="javascript:void(0)">会员政策</a></dd>
+                  <dd><a href="javascript:void(0)">联系客服</a></dd>
+                  <dd><a href="javascript:void(0)">积分政策</a></dd>
+                  <dd><a href="javascript:void(0)">加入我们</a></dd>
+            </dl>
+            <dl>
+                  <dt class="ps">配送方式</dt>
+                  <dd><a href="javascript:void(0)">全程冷链</a></dd>
+                  <dd><a href="javascript:void(0)">配送时间</a></dd>
+                  <dd><a href="javascript:void(0)">配送范围</a></dd>
+                  <dd><a href="javascript:void(0)">配送收费标准</a></dd>
+                  <dd><a href="javascript:void(0)">关于我们</a></dd>
+            </dl>
+            <dl>
+                  <dt class="zf">支付方式</dt>
+				  <dd><a href="javascript:void(0)">在线支付</a></dd>
+                  <dd><a href="javascript:void(0)">其他支付方式</a></dd>
+                  <dd><a href="javascript:void(0)">优惠券使用</a></dd>
+                  <dd><a href="javascript:void(0)">礼金卡使用</a></dd>
+            </dl>
+            <dl>
+                  <dt class="sh">售后服务</dt>
+                  <dd><a href="javascript:void(0)">验货与拒收政策</a></dd>
+                  <dd><a href="javascript:void(0)">退换货政策</a></dd>
+                  <dd><a href="javascript:void(0)">退换货流程</a></dd>
+                  <dd><a href="javascript:void(0)">退款流程</a></dd>
+                  <dd><a href="javascript:void(0)">发票制度</a></dd>
+            </dl>    
+     </div>
+     <div class="info wraper">
+           <dl>
+                 <dt><img src="../images/tel_f3c65362.gif" >客服热线：4006-917-917（周一至周日 8:00-20:00）</dt>
+                 <dd>
+                       <em><a href="javascript:void(0)">加入我们</a></em>
+                       <em><a href="javascript:void(0)">联系我们</a></em>
+                       <em><a href="javascript:void(0)">关于我们</a></em>
+                       <em><a href="javascript:void(0)">友情链接</a></em>
+                       <em><a href="javascript:void(0)">品牌食材</a></em>
+                       <em><a href="javascript:void(0)">食品流通许可证</a></em>
+                       <em class="b0"><a href="javascript:void(0)">营业执照</a></em>
+                 </dd>
+                 <dd class="d2">
+                       <img src="../images/beian_d0289dc0.png">京公网安备 11010502022386号
+                       <em class="b0"><a href="javascript:void(0)">京ICP证120338号</a></em>
+                       
+                 </dd>
+                 <dd class="copy">© 2012-2017 Benlai.com. All Rights Reserved. 北京本来工坊科技有限公司</dd>
+                 <dd class="d3"><img src="../images/verifyseal.jpg"></dd>
+           </dl>
+     </div>
+	<!--end底部-->
+	<!--start右侧浮动-->	
+	<div id="goTop">
+	    <a href="javascript:void(0)" hidefocus="true" id="go_top" ></a>
+	    <a href="javascript:void(0)" id="right_cart" class="cart_buy cart_focus" ></a>
+	    <a href="javascript:void(0)" class="zhiCustomBtn service" ></a>
+	    <a href="javascript:void(0)" id="two_code"   class="two_code" ></a>
+    </div>
+    <!---------------->
+    <div  id="twocodeParent">
+	    <div class="pop_code">
+	        <div class="code_con">
+	            <span>
+	                <img src="../images/w1.png" width="186" height="186" alt="本来微博 二维码"></span>
+	            <b>本来微博 二维码</b>
+	        </div>
+	    </div>
+	    <div class="pop_code2">
+	        <div class="code_con">
+	            <span>
+	                <img src="../images/w2.gif" width="186" height="186" alt="本来微信 二维码"></span>
+	            <b>本来微信 二维码</b>
+	        </div>
+	    </div>
+	
+	    <div class="pop_code3">
+	        <div class="code_con">
+	            <span>
+	                <img src="../images/w3.gif" width="186" height="186" alt="扫描下载客户端"></span>
+	            <b>扫描下载客户端</b>
+	        </div>
+	    </div>
+	</div>
+<!--------------------->
+	<!--end右侧浮动-->
+	
+	
+	</body>
+</html>
